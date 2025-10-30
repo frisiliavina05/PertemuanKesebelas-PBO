@@ -27,6 +27,7 @@ Beberapa fungsi utama EntityManager, antara lain: <br>
 - merge() → Memperbarui data yang sudah ada.
 - remove() → Menghapus data dari penyimpanan.
 - createQuery() / createNamedQuery() → Menjalankan query berbasis JPQL (Java Persistence Query Language). <br>
+
 Persistence unit berfungsi sebagai wadah konfigurasi yang memungkinkan EntityManager mengenali media penyimpanan yang digunakan. Dalam praktikum ini, meskipun tidak menggunakan MySQL, konsep persistence tetap diterapkan untuk menyimpan data secara terstruktur melalui file atau memori lokal.
 
 
