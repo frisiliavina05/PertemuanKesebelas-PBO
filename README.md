@@ -16,6 +16,7 @@ Beberapa anotasi penting yang digunakan dalam entity, yaitu : <br>
 - @Id → Menunjukkan atribut yang menjadi primary key atau identitas unik data.
 - @Column(name = "nama_kolom") → Menentukan nama kolom yang sesuai di tabel penyimpanan.
 - @NamedQuery → Mendefinisikan query tetap (predefined query) agar mudah dipanggil kembali. <br>
+
 Penggunaan anotasi tersebut, membuat pengelolaan data lebih mudah dan terstruktur karena setiap atribut class terhubung langsung dengan kolom penyimpanan.
 
 # Entity Manager dan Persistence Unit
