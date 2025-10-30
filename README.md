@@ -15,16 +15,18 @@ Beberapa anotasi penting yang digunakan dalam entity, yaitu : <br>
 - @Table(name = "nama_tabel") → Menentukan nama tabel penyimpanan data.
 - @Id → Menunjukkan atribut yang menjadi primary key atau identitas unik data.
 - @Column(name = "nama_kolom") → Menentukan nama kolom yang sesuai di tabel penyimpanan.
-- @NamedQuery → Mendefinisikan query tetap (predefined query) agar mudah dipanggil kembali.
+- @NamedQuery → Mendefinisikan query tetap (predefined query) agar mudah dipanggil kembali. <br>
+Penggunaan anotasi tersebut, membuat pengelolaan data lebih mudah dan terstruktur karena setiap atribut class terhubung langsung dengan kolom penyimpanan.
 
 # Entity Manager dan Persistence Unit
-EntityManager adalah komponen inti JPA yang bertugas mengelola siklus hidup objek entity, termasuk menyimpan, memperbarui, mencari, dan menghapus data. 
+EntityManager adalah komponen inti JPA yang bertugas mengelola siklus hidup objek entity, termasuk menyimpan, memperbarui, mencari, dan menghapus data. EntityManager bekerja berdasarkan konfigurasi yang didefinisikan dalam persistence.xml, yaitu file yang berisi informasi persistence unit (nama unit, provider JPA, dan konfigurasi koneksi). <br>
 Beberapa fungsi utama EntityManager, antara lain: <br>
 - persist() → Menyimpan data baru ke dalam penyimpanan.
 - find() → Mengambil data berdasarkan primary key.
 - merge() → Memperbarui data yang sudah ada.
 - remove() → Menghapus data dari penyimpanan.
-- createQuery() / createNamedQuery() → Menjalankan query berbasis JPQL (Java Persistence Query Language).
+- createQuery() / createNamedQuery() → Menjalankan query berbasis JPQL (Java Persistence Query Language). <br>
+Persistence unit berfungsi sebagai wadah konfigurasi yang memungkinkan EntityManager mengenali media penyimpanan yang digunakan. Dalam praktikum ini, meskipun tidak menggunakan MySQL, konsep persistence tetap diterapkan untuk menyimpan data secara terstruktur melalui file atau memori lokal.
 
 
 
